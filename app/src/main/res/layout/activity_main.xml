@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/bgimg"
+        android:layout_width="502dp"
+        android:layout_height="907dp"
+        android:layout_marginTop="-88dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/blue" />
+
+    <TextView
+        android:id="@+id/condition"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:fontFamily="@font/bungee_inline"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/conditiontxt"
+        app:layout_constraintEnd_toEndOf="@+id/humidity"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/humidity" />
+
+    <TextView
+        android:id="@+id/conditiontxt"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/bungee_inline"
+        android:text="Condition:"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/humtext"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/humtext"
+        app:layout_constraintTop_toBottomOf="@+id/feelstext" />
+
+    <TextView
+        android:id="@+id/feelslike"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:fontFamily="@font/bungee_inline"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/feelstext"
+        app:layout_constraintEnd_toEndOf="@+id/humidity"
+        app:layout_constraintStart_toStartOf="@+id/humidity" />
+
+    <TextView
+        android:id="@+id/feelstext"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/bungee_inline"
+        android:text="Feels Like:"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/humtext"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/humtext"
+        app:layout_constraintTop_toBottomOf="@+id/humtext" />
+
+    <TextView
+        android:id="@+id/humidity"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:fontFamily="@font/bungee_inline"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/humtext"
+        app:layout_constraintEnd_toEndOf="@+id/min"
+        app:layout_constraintStart_toStartOf="@+id/min" />
+
+    <TextView
+        android:id="@+id/min"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:fontFamily="@font/bungee_inline"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/mintext"
+        app:layout_constraintEnd_toEndOf="@+id/max"
+        app:layout_constraintStart_toStartOf="@+id/max" />
+
+    <TextView
+        android:id="@+id/humtext"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/bungee_inline"
+        android:text="Humidity:"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/mintext"
+        app:layout_constraintStart_toStartOf="@+id/mintext"
+        app:layout_constraintTop_toBottomOf="@+id/mintext" />
+
+    <TextView
+        android:id="@+id/mintext"
+        android:layout_width="170dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/bungee_inline"
+        android:text="Min Temperature:"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/maxtext"
+        app:layout_constraintStart_toStartOf="@+id/maxtext"
+        app:layout_constraintTop_toBottomOf="@+id/maxtext" />
+
+    <TextView
+        android:id="@+id/max"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/bungee_inline"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/maxtext"
+        app:layout_constraintStart_toEndOf="@+id/maxtext"
+        app:layout_constraintTop_toTopOf="@+id/maxtext" />
+
+    <TextView
+        android:id="@+id/maxtext"
+        android:layout_width="170dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/bungee_inline"
+        android:text="Max Temperature:"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cityname" />
+
+    <Button
+        android:id="@+id/go"
+        android:layout_width="71dp"
+        android:layout_height="71dp"
+        android:backgroundTint="#2EA69B"
+        android:fontFamily="@font/bungee_inline"
+        android:text="GO"
+        android:textColorLink="#348986"
+        app:layout_constraintBottom_toBottomOf="@+id/city"
+        app:layout_constraintStart_toEndOf="@+id/city"
+        app:layout_constraintTop_toTopOf="@+id/city" />
+
+    <EditText
+        android:id="@+id/city"
+        android:layout_width="229dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="City"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/current"
+        android:layout_width="165dp"
+        android:layout_height="99dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/bungee_inline"
+        android:textAlignment="center"
+        android:textSize="60sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/city" />
+
+    <TextView
+        android:id="@+id/cityname"
+        android:layout_width="307dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/bungee_inline"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/current" />
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="99dp"
+        android:layout_height="99dp"
+        android:layout_marginStart="5dp"
+        app:layout_constraintStart_toEndOf="@+id/current"
+        app:layout_constraintTop_toTopOf="@+id/current"
+        app:srcCompat="@drawable/blank" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
