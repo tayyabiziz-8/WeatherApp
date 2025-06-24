@@ -34,7 +34,7 @@ A simple, user-friendly Android application that provides real-time weather info
 This app uses [Weather API service] for weather data. To run the app:
 
 1. Get an API key from [Weather API service website]
-2. Add your API key to the appropriate location in the app
+2. Add your API key to the appropriate location in the app (MainActivity.java)
 
 ## Project Structure
 
