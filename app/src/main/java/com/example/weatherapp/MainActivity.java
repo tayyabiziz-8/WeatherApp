@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
                             {
 
                                 runOnUiThread(new Runnable() {
-                                    URL u = new URL("https://api.openweathermap.org/data/2.5/weather?q="+location+"&appid=f51737dc07cfb297e51be2c4136a7904");
+                                    URL u = new URL("apiKey+location+restOfTheKey");
 
                                     char[] buffer= new char[100000];
 
